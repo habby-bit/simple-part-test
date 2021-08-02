@@ -4,8 +4,8 @@ const Category = ({title, src}) => {
     return (
         <>
             <h3>{title}</h3>
-            <a href="#">See more</a>
-            <img src={src} />
+            <a href="#!">See more</a>
+            <img src={src} alt={title}/>
         </>
     )
 }

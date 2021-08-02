@@ -1,6 +1,9 @@
 import React from 'react';
 import { AiOutlineSearch, AiOutlineShoppingCart, AiOutlineCopyright } from 'react-icons/ai';
 import { RiArrowDropDownLine, RiErrorWarningLine} from 'react-icons/ri';
+import { MdLocationOn, MdEmail } from 'react-icons/md';
+import { FiPhone } from 'react-icons/fi';
+
 import Make from './components/Make';
 import Category from './components/Category';
 
@@ -17,9 +20,20 @@ const App = () => {
         <h2>EnglishParts.com</h2>
         <div class="contact-details">
       
-            <div class="contact">5850 Stadium Dr, Kalamazoo, MI 49009</div>
-            <div class="contact">866.467.1776</div>
-            <div class="contact"><a tabindex="0" class="small" href="#">sales@englishparts.com</a></div>
+            <div class="contact location">
+              <MdLocationOn />
+              5850 Stadium Dr, Kalamazoo, MI 49009
+            </div>
+            <div class="contact phone">
+              <FiPhone />
+              866.467.1776
+            </div>
+            <div class="contact email">
+              <a tabindex="0" class="small" href="#!!">
+                <MdEmail />
+                sales@englishparts.com
+              </a>
+            </div>
         </div>
         <ul>
           <li>
@@ -51,7 +65,7 @@ const App = () => {
         </div>
       </nav>
 
-      <a href="#" aria-label="">
+      <a href="#!!" aria-label="">
         Welcome to EnglishParts.com, 
         your home for Jaguar, MG, Triumph and Austin Healey Parts!
       </a>
@@ -108,26 +122,26 @@ const App = () => {
         <div class="about">
           <h3>About</h3>
           <ul>
-              <li><a href="#" title="Accepted Payment">Accepted Payment</a></li>
-              <li><a href="#" title="Contact Us">Contact Us</a></li>
-              <li><a href="#" title="Policies">Policies</a></li>
-              <li><a href="#" title="Refunds">Refunds</a></li>
-              <li><a href="#" title="Returns">Returns</a></li>
+              <li><a href="#!" title="Accepted Payment">Accepted Payment</a></li>
+              <li><a href="#!" title="Contact Us">Contact Us</a></li>
+              <li><a href="#!" title="Policies">Policies</a></li>
+              <li><a href="#!" title="Refunds">Refunds</a></li>
+              <li><a href="#!" title="Returns">Returns</a></li>
             </ul>
         </div>
 
         <div class="legal">
 					<h3>Legal</h3>
 					<ul>
-						<li title="Policies"><a href="#" title="Policies">Policies</a></li>
+						<li title="Policies"><a href="#!" title="Policies">Policies</a></li>
 					</ul>
         </div>
 					
 				<div class="links">
 					<h3>Links</h3>	
 						<ul>
-							<li><a href="#" title="My Information">My Information</a></li>
-							<li><a href="#" title="Testimonials">Testimonials</a></li>
+							<li><a href="#!" title="My Information">My Information</a></li>
+							<li><a href="#!" title="Testimonials">Testimonials</a></li>
 						</ul>
         </div>
 
