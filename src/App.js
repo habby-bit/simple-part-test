@@ -15,6 +15,7 @@ const App = () => {
           | Kalamazoo, MI
       </p>
 
+      {/* Header */}
       <header class="website-contact">
         <img id="logo" alt="" src="./files/logo.png"/>
         <div class="contact-details">
@@ -44,6 +45,8 @@ const App = () => {
             <i><MdKeyboardArrowRight /></i>
           </p>
         </div>
+
+        {/* Hamburger Button For Smaller Screens */}
         <div class="hamburger">
             <div class="line"></div>
             <div class="line"></div>
@@ -51,6 +54,7 @@ const App = () => {
         </div>
       </header>
 
+    {/* Navbar */}
       <nav>
         <div class="search"> 
           <i><ImSearch /></i>
@@ -67,11 +71,13 @@ const App = () => {
         </div>
       </nav>
 
+    {/* Link Under Nav */}
       <a class="smallLink" href="#!" aria-label="">
         Welcome to EnglishParts.com, your home for Jaguar, 
         MG, Triumph and Austin Healey Parts!
       </a>
 
+      {/* Top Jumbotron */}
       <div class="jumbotron-top">
         <img src="./files/images/parts/heroes/default.jpg" alt="car"/>
         <h2 >
@@ -91,6 +97,7 @@ const App = () => {
         </p>
       </div>
 
+      {/* Select A Make */}
       <div class="make">
         <h2>Select a Make</h2>
         <div class="divider"></div>
@@ -102,6 +109,7 @@ const App = () => {
         </div>
       </div>
 
+      {/* Select A Category */}
       <div class="category">
         <h1>Select a Category</h1>
         <div class="divider"></div>
@@ -127,6 +135,7 @@ const App = () => {
         </div>
       </div>
 
+      {/* Bottom Jumbotron */}
       <div class="jumbotron-bottom">
         <div class="jumbotron-grid">
           <div class="about">
@@ -167,6 +176,7 @@ const App = () => {
 
       </div>
 
+      {/* Footer */}
       <footer>
         <div class="copyright">
           <img src="./files/images/logos/simplepart-logo-dark.png" alt="Simple Part"/>
