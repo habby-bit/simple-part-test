@@ -68,8 +68,8 @@ const App = () => {
       </nav>
 
       <a class="smallLink" href="#!" aria-label="">
-        Welcome to EnglishParts.com, 
-        your home for Jaguar, MG, Triumph and Austin Healey Parts!
+        Welcome to EnglishParts.com, your home for Jaguar, 
+        MG, Triumph and Austin Healey Parts!
       </a>
 
       <div class="jumbotron-top">
@@ -158,7 +158,7 @@ const App = () => {
         <div class="lightDivider"></div>
 
         <p class="warning">
-          <i><RiErrorWarningLine /></i>
+          <i class="hide"><RiErrorWarningLine /></i>
 					While every reasonable effort is made to ensure the accuracy 
           of this data, we are not responsible for any errors or 
           omissions contained on these pages. Please verify any 
