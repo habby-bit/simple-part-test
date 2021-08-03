@@ -1,0 +1,339 @@
+.divider {
+  background: black;
+  height: 2px;
+  margin: 0rem 1.5rem;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+.smallTitle {
+  font-size: 0.75rem;
+  font-weight: 900;
+  margin-left: 4.5rem;
+  padding-top: 0;
+  margin-top: 0;
+}
+header {
+  display: inline-flex;
+  margin-left: 6rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+header #logo {
+  width: 3.3rem;
+  height: 3.3rem;
+}
+header .contact-details {
+  margin-left: 20px;
+}
+header .contact-details h2 {
+  margin-top: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.3rem;
+}
+header .contact-details .contact {
+  display: inline-flex;
+  padding-right: 0.9rem;
+  padding-top: 0;
+  font-size: 0.8rem;
+}
+header .contact-details i {
+  color: #858585;
+  padding-right: 0.1rem;
+  font-size: 1.1rem;
+}
+header .contact-details a {
+  text-decoration: none;
+  color: black;
+}
+header .contact-details a:hover {
+  color: #337ab7;
+  text-decoration: underline;
+}
+header .toggle {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 250px;
+}
+header .toggle p {
+  display: inline-flex;
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+header .toggle i {
+  display: inline-flex;
+  font-size: 2rem;
+  margin-top: -0.5rem;
+  margin-left: -0.4rem;
+  color: #ccc;
+}
+nav {
+  width: 100%;
+  display: inline-flex;
+  border: solid 1px #ececec;
+  border-bottom: solid #ececec 2px;
+  padding: 0.9rem 0;
+  background: #fafafa;
+  margin-bottom: 1rem;
+}
+nav .search {
+  border: solid 1px #ececec;
+  padding-left: 0.5rem;
+  margin-left: 2rem;
+  height: 2.3rem;
+  background: #fff;
+}
+nav .search i {
+  background: none;
+  padding-right: 5px;
+  color: #9e1e23;
+}
+nav .search input {
+  border: none;
+  width: 25rem;
+  padding: 0.3rem;
+}
+nav .search input::placeholder {
+  color: #858585;
+  font-weight: 700;
+}
+nav .search button {
+  border: none;
+  background: none;
+  border-left: solid 1px #ececec;
+  height: 2.3rem;
+  text-transform: uppercase;
+  color: #9e1e23;
+  font-weight: 600;
+  padding: 0.4rem;
+}
+nav .select {
+  display: inline-flex;
+  border: solid 1px #ececec;
+  padding-left: 0.8rem;
+  margin-left: 0.5rem;
+  height: 2.3rem;
+  background: #fff;
+}
+nav .select p {
+  margin-top: 0.5rem;
+  padding-right: 15px;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+nav .select i {
+  border-left: solid 1px #ececec;
+  height: 2.3rem;
+  text-transform: uppercase;
+  color: #9e1e23;
+  font-size: 35px;
+}
+nav .cart {
+  display: inline-flex;
+  height: 2.3rem;
+  width: 5rem;
+  margin-left: 0.5rem;
+  background: #9e1e23;
+  color: #fff;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav .cart i,
+nav .cart p {
+  font-size: 1.4rem;
+}
+.smallLink {
+  text-decoration: none;
+  color: black;
+  font-size: 0.75rem;
+  margin-left: 4.5rem;
+}
+.smallLink:hover {
+  color: #337ab7;
+  text-decoration: underline;
+}
+.jumbotron-top {
+  width: 100%;
+  height: 17rem;
+  background-color: #072847;
+  color: white;
+  position: relative;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.jumbotron-top img {
+  object-fit: cover;
+  object-position: 20% 20%;
+  width: 20rem;
+  height: 17rem;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+}
+.jumbotron-top h2 {
+  font-weight: 800;
+  padding-left: 22rem;
+  padding-right: 19rem;
+  position: absolute;
+  font-size: 1.4rem;
+}
+.jumbotron-top p {
+  font-size: 0.8rem;
+  padding: 6rem 19rem 3rem 22rem;
+}
+.make {
+  background: #ececec;
+  padding: 1.2rem 0 3rem 0;
+}
+.make h2 {
+  margin: 0.5rem 1.5rem;
+  font-size: 1.4rem;
+}
+.make .carMakes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 1rem;
+  justify-content: center;
+  min-width: 0;
+  min-height: 0;
+}
+.make .carMakes .makeContainer {
+  margin-left: 4.5rem;
+  margin: 0;
+}
+.make .carMakes .makeContainer a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.make .carMakes .makeContainer a:hover {
+  text-decoration: underline;
+}
+.make .carMakes .makeContainer a p {
+  text-align: center;
+  margin-bottom: 0;
+}
+.category {
+  margin-top: 2rem;
+}
+.category h2 {
+  margin: 0.5rem 1.5rem;
+  font-size: 1.4rem;
+}
+.category .categories {
+  display: grid;
+  gap: 0.6rem;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 1.5rem 1.5rem;
+}
+.category .categories .categoryContainer {
+  border: solid 1px #ececec;
+  padding: 1rem;
+  position: relative;
+  height: 8rem;
+}
+.category .categories .categoryContainer:hover {
+  cursor: pointer;
+  border: black 1px solid;
+}
+.category .categories .categoryContainer:hover h4,
+.category .categories .categoryContainer:hover a {
+  text-decoration: underline;
+}
+.category .categories .categoryContainer h4 {
+  margin-top: 0;
+}
+.category .categories .categoryContainer a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.6rem;
+  font-weight: 700;
+  position: absolute;
+  bottom: 0.5rem;
+}
+.category .categories .categoryContainer img {
+  width: 3.5rem;
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+}
+.jumbotron-bottom {
+  background: #072847;
+  padding-left: 2rem;
+  color: white;
+  padding-bottom: 6rem;
+}
+.jumbotron-bottom .jumbotron-grid {
+  display: grid;
+  grid-template-areas: about legal links 1fr;
+  grid-template-columns: repeat(4, 1fr);
+}
+.jumbotron-bottom .jumbotron-grid h5 {
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.jumbotron-bottom .jumbotron-grid ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2.3rem;
+  margin-left: 0.8rem;
+}
+.jumbotron-bottom .jumbotron-grid ul li {
+  margin-top: 0;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+.jumbotron-bottom .jumbotron-grid ul a {
+  color: white;
+  text-decoration: none;
+}
+.jumbotron-bottom .lightDivider {
+  background: white;
+  height: 0.5px;
+}
+.jumbotron-bottom .warning {
+  display: inline-flex;
+  font-size: 0.6rem;
+  margin-top: 1.3rem;
+}
+.jumbotron-bottom .warning i {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+footer {
+  padding: 1.5rem 1.5rem 0 1.7rem;
+  color: #6d6d6d;
+}
+footer .copyright {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+footer .copyright img {
+  width: 17rem;
+  height: 0.8rem;
+}
+footer .copyright p {
+  font-size: 0.6rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+footer #code {
+  font-size: 0.7rem;
+  padding-top: 1rem;
+}
+@media screen and (max-width: 780px) {
+  .jumbotron-top img {
+    display: none;
+    visibility: hidden;
+  }
+  .jumbotron-top h2 {
+    padding: 0.5rem 0.5rem 0rem 1rem;
+  }
+  .jumbotron-top p {
+    padding: 4.5rem 6rem 4.5rem 1rem;
+  }
+}

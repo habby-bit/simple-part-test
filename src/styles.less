@@ -1,0 +1,424 @@
+// Variables
+@leftMargin: 4.5rem;
+@navBorder: solid 1px #ececec;
+@primaryColor: #072847;
+@fontFamily: Verdana, Geneva, Tahoma, sans-serif;
+// @secondaryColor:
+
+// Mixins
+.divider {
+    background: black;
+    height: 2px;
+    margin: 0rem 1.5rem;
+}
+
+body {
+    font-family: @fontFamily;
+    background: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.smallTitle {
+    font-size: 0.75rem;
+    font-weight: 900;
+    margin-left: @leftMargin;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+// Header
+header {
+    display: inline-flex;
+    margin-left: 6rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+
+    #logo {
+        width: 3.3rem;
+        height: 3.3rem;
+    }
+
+    .contact-details {
+        margin-left: 20px;
+
+        h2 {
+            margin-top: 0;
+            font-family: @fontFamily;
+            font-size: 1.3rem;
+        }
+
+        .contact {
+            display: inline-flex;
+            padding-right: 0.9rem;
+            padding-top: 0;
+            font-size: 0.8rem;
+        }
+
+        i {
+            color: #858585;
+            padding-right: 0.1rem;
+            font-size: 1.1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+
+            &:hover {
+                color: #337ab7;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    // Parts & About Us
+    .toggle {
+        font-family: @fontFamily;
+        margin-left: 250px;
+
+        p {
+            display: inline-flex;
+            font-weight: 800;
+            font-size: 0.9rem;
+        }
+
+        i {
+            display: inline-flex;
+            font-size: 2rem;
+            margin-top: -0.5rem;
+            margin-left: -0.4rem;
+            color: #ccc;
+        }
+    }
+}
+
+// Nav
+nav {
+    width: 100%;
+    display: inline-flex;
+    border: @navBorder;
+    border-bottom: solid #ececec 2px;
+    padding: 0.9rem 0;
+    background: #fafafa;
+    margin-bottom: 1rem;
+
+    .search {
+        border: @navBorder;
+        padding-left: 0.5rem;
+        margin-left: 2rem;
+        height: 2.3rem;
+        background: #fff;
+
+        i {
+            background: none;
+            padding-right: 5px;
+            color: #9e1e23;
+        }
+
+        input {
+            border: none;
+            width: 25rem;
+            padding: 0.3rem;
+
+            &::placeholder {
+                color: #858585;
+                font-weight: 700;
+            }
+        }
+
+        button {
+            border: none;
+            background: none;
+            border-left: @navBorder;
+            height: 2.3rem;
+            text-transform: uppercase;
+            color: #9e1e23;
+            font-weight: 600;
+            padding: 0.4rem;
+        }
+    }
+
+    .select {
+        display: inline-flex;
+        border: @navBorder;
+        padding-left: 0.8rem;
+        margin-left: 0.5rem;
+        height: 2.3rem;
+        background: #fff;
+
+        p {
+            margin-top: 0.5rem;
+            padding-right: 15px;
+            font-weight: 700;
+            font-size: 0.85rem;
+        }
+
+        i {
+            border-left: @navBorder;
+            height: 2.3rem;
+            text-transform: uppercase;
+            color: #9e1e23;
+            font-size: 35px;
+        }
+    }
+
+    .cart {
+        display: inline-flex;
+        height: 2.3rem;
+        width: 5rem;
+        margin-left: 0.5rem;
+        background: #9e1e23;
+        color: #fff;
+        justify-content: space-evenly;
+        align-items: center;
+
+        i,
+        p {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+.smallLink {
+    text-decoration: none;
+    color: black;
+    font-size: 0.75rem;
+    margin-left: @leftMargin;
+
+    &:hover {
+        color: #337ab7;
+        text-decoration: underline;
+    }
+}
+
+// Top Jumbotron
+.jumbotron-top {
+    width: 100%;
+    height: 17rem;
+    background-color: @primaryColor;
+    color: white;
+    position: relative;
+    font-family: @fontFamily;
+
+    img {
+        object-fit: cover;
+        object-position: 20% 20%;
+        width: 20rem;
+        height: 17rem;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+    }
+
+    h2 {
+        font-weight: 800;
+        padding-left: 22rem;
+        padding-right: 19rem;
+        position: absolute;
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+        padding: 6rem 19rem 3rem 22rem;
+    }
+}
+
+// Select A Make
+.make {
+    background: #ececec;
+    padding: 1.2rem 0 3rem 0;
+
+    h2 {
+        margin: 0.5rem 1.5rem;
+        font-size: 1.4rem;
+    }
+
+    .carMakes {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 1rem;
+        justify-content: center;
+        min-width: 0;
+        min-height: 0;
+
+        .makeContainer {
+            margin-left: @leftMargin;
+            margin: 0;
+
+            a {
+                text-decoration: none;
+                color: black;
+                font-weight: 600;
+                font-size: 1.1rem;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+
+                p {
+                    text-align: center;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+// Select A Category
+
+.category {
+    margin-top: 2rem;
+
+    h2 {
+        margin: 0.5rem 1.5rem;
+        font-size: 1.4rem;
+    }
+
+    .categories {
+        display: grid;
+        gap: 0.6rem;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 1.5rem 1.5rem;
+
+        .categoryContainer {
+            border: @navBorder;
+            padding: 1rem;
+            position: relative;
+            height: 8rem;
+
+            &:hover {
+                cursor: pointer;
+
+                h4,
+                a {
+                    text-decoration: underline;
+                }
+                border: black 1px solid;
+            }
+
+            h4 {
+                margin-top: 0;
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+                font-size: 0.6rem;
+                font-weight: 700;
+                position: absolute;
+                bottom: 0.5rem;
+            }
+
+            img {
+                width: 3.5rem;
+                position: absolute;
+                bottom: 0.5rem;
+                right: 0.5rem;
+            }
+        }
+    }
+}
+
+.jumbotron-bottom {
+    background: @primaryColor;
+    padding-left: 2rem;
+    color: white;
+    padding-bottom: 6rem;
+
+    .jumbotron-grid {
+        display: grid;
+        grid-template-areas: about legal links 1fr;
+        grid-template-columns: repeat(4, 1fr);
+
+        h5 {
+            text-transform: uppercase;
+            margin-bottom: 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 2.3rem;
+            margin-left: 0.8rem;
+
+            li {
+                margin-top: 0;
+                font-size: 0.8rem;
+                line-height: 1.2rem;
+            }
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .lightDivider {
+        background: white;
+        height: 0.5px;
+    }
+
+    .warning {
+        display: inline-flex;
+        font-size: 0.6rem;
+        margin-top: 1.3rem;
+
+        i {
+            font-size: 1.5rem;
+            margin-right: 0.5rem;
+        }
+    }
+}
+
+footer {
+    padding: 1.5rem 1.5rem 0 1.7rem;
+    color: #6d6d6d;
+
+    .copyright {
+        position: relative;
+        margin-bottom: 1.5rem;
+
+        img {
+            width: 17rem;
+            height: 0.8rem;
+        }
+
+        p {
+            font-size: 0.6rem;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    }
+
+    #code {
+        font-size: 0.7rem;
+        padding-top: 1rem;
+    }
+}
+
+// Media Queries
+
+// Medium
+@media screen and (max-width: 780px) {
+    .jumbotron-top {
+        img {
+            display: none;
+            visibility: hidden;
+        }
+
+        h2 {
+            padding: 0.5rem 0.5rem 0rem 1rem;
+        }
+
+        p {
+            padding: 4.5rem 6rem 4.5rem 1rem;
+        }
+    }
+}
+
+// Small
