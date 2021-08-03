@@ -2,7 +2,7 @@ import React from 'react';
 
 const Make = ({ title, src }) => {
     return (
-        <div class="makeContainer">
+        <div className="makeContainer">
             <a href="#!">
                 <p>{title}</p>
                 <img src={src} alt={title}/>

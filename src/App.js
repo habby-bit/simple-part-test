@@ -10,32 +10,32 @@ import "./styles.css"
 const App = () => {
   return (
    <div>
-      <p class="smallTitle"> Browse our complete catalog of OEM and licensed 
+      <p className="smallTitle"> Browse our complete catalog of OEM and licensed 
           British heritage parts for your classic British automobile. 
           | Kalamazoo, MI
       </p>
 
       {/* Header */}
-      <header class="website-contact">
+      <header className="website-contact">
         <img id="logo" alt="" src="./files/logo.png"/>
-        <div class="contact-details">
+        <div className="contact-details">
           <h2>EnglishParts.com</h2>
-          <div class="contact location">
+          <div className="contact location">
             <i><MdLocationOn /></i>
             5850 Stadium Dr, Kalamazoo, MI 49009
           </div>
-          <div class="contact phone">
+          <div className="contact phone">
             <i><RiPhoneFill /></i>
             866.467.1776
           </div>
-          <div class="contact email">
+          <div className="contact email">
             <i><MdEmail /></i>
-            <a tabindex="0" class="small" href="#!!">
+            <a tabindex="0" className="small" href="#!">
                 sales@englishparts.com
             </a>
           </div>
         </div>
-        <div class="toggle hide">
+        <div className="toggle hide">
           <p>
             Parts
             <i><MdKeyboardArrowDown /></i>
@@ -47,38 +47,38 @@ const App = () => {
         </div>
 
         {/* Hamburger Button For Smaller Screens */}
-        <div class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
+        <div className="hamburger">
+            <div className="line"></div>
+            <div className="line"></div>
+            <div className="line"></div>
         </div>
       </header>
 
     {/* Navbar */}
       <nav>
-        <div class="search"> 
+        <div className="search"> 
           <i><ImSearch /></i>
           <input placeholder="Search by Keywords, Part Numbers or VIN"></input>
           <button>Go</button>
         </div>
-        <div class="select">
+        <div className="select">
             <p>Select Your Vehicle</p>
             <i><RiArrowDropDownLine /></i>
         </div>
-        <div class="cart">
+        <div className="cart">
           <i><FaShoppingCart /></i>
           <p>0</p>
         </div>
       </nav>
 
     {/* Link Under Nav */}
-      <a class="smallLink" href="#!" aria-label="">
+      <a className="smallLink" href="#!" aria-label="">
         Welcome to EnglishParts.com, your home for Jaguar, 
         MG, Triumph and Austin Healey Parts!
       </a>
 
       {/* Top Jumbotron */}
-      <div class="jumbotron-top">
+      <div className="jumbotron-top">
         <img src="./files/images/parts/heroes/default.jpg" alt="car"/>
         <h2 >
           Premium Austin Healey, Jaguar, MG, and Triumph Parts
@@ -98,10 +98,10 @@ const App = () => {
       </div>
 
       {/* Select A Make */}
-      <div class="make">
+      <div className="make">
         <h2>Select a Make</h2>
-        <div class="divider"></div>
-        <div class="carMakes">
+        <div className="divider"></div>
+        <div className="carMakes">
           <Make title="Austin Healey" src="./files/austin-healey.png" />
           <Make title="Jaguar" src="files/jaguar.png" />
           <Make title="MG" src="files/mg.png" />
@@ -110,10 +110,10 @@ const App = () => {
       </div>
 
       {/* Select A Category */}
-      <div class="category">
+      <div className="category">
         <h1>Select a Category</h1>
-        <div class="divider"></div>
-        <div class="categories">
+        <div className="divider"></div>
+        <div className="categories">
           <Category title="Body" src="./files/body.jpg"/>
           <Category title="Brake System" src="./files/brake-system.jpg"/>
           <Category title="Cables" src="./files/cables.jpg"/>
@@ -136,9 +136,9 @@ const App = () => {
       </div>
 
       {/* Bottom Jumbotron */}
-      <div class="jumbotron-bottom">
-        <div class="jumbotron-grid">
-          <div class="about">
+      <div className="jumbotron-bottom">
+        <div className="jumbotron-grid">
+          <div className="about">
             <ul>
                 <h5>About</h5>
                 <li><a href="#!" title="Accepted Payment">Accepted Payment</a></li>
@@ -149,14 +149,14 @@ const App = () => {
               </ul>
           </div>
 
-          <div class="legal">
+          <div className="legal">
             <ul>
               <h5>Legal</h5>
               <li title="Policies"><a href="#!" title="Policies">Policies</a></li>
             </ul>
           </div>
             
-          <div class="links">
+          <div className="links">
               <ul>
                 <h5>Links</h5>	
                 <li><a href="#!" title="My Information">My Information</a></li>
@@ -164,10 +164,10 @@ const App = () => {
               </ul>
           </div>
         </div>
-        <div class="lightDivider"></div>
+        <div className="lightDivider"></div>
 
-        <p class="warning">
-          <i class="hide"><RiErrorWarningLine /></i>
+        <p className="warning">
+          <i className="hide"><RiErrorWarningLine /></i>
 					While every reasonable effort is made to ensure the accuracy 
           of this data, we are not responsible for any errors or 
           omissions contained on these pages. Please verify any 
@@ -178,7 +178,7 @@ const App = () => {
 
       {/* Footer */}
       <footer>
-        <div class="copyright">
+        <div className="copyright">
           <img src="./files/images/logos/simplepart-logo-dark.png" alt="Simple Part"/>
           <p>© 2021 EnglishParts.com</p>
         </div>
