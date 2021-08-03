@@ -1,10 +1,8 @@
 import React from 'react';
 import { RiArrowDropDownLine, RiErrorWarningLine, RiPhoneFill } from 'react-icons/ri';
-import { MdLocationOn, MdEmail } from 'react-icons/md';
+import { MdLocationOn, MdEmail, MdKeyboardArrowRight, MdKeyboardArrowDown } from 'react-icons/md';
 import { ImSearch } from 'react-icons/im';
 import { FaShoppingCart } from 'react-icons/fa'
-
-
 import Make from './components/Make';
 import Category from './components/Category';
 import "./styles.css"
@@ -36,15 +34,20 @@ const App = () => {
             </a>
           </div>
         </div>
-        <div class="toggle">
+        <div class="toggle hide">
           <p>
             Parts
-            <i><RiArrowDropDownLine /></i>
+            <i><MdKeyboardArrowDown /></i>
           </p>
           <p>
             About Us
-            <i><RiArrowDropDownLine /></i>
+            <i><MdKeyboardArrowRight /></i>
           </p>
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
         </div>
       </header>
 
@@ -100,7 +103,7 @@ const App = () => {
       </div>
 
       <div class="category">
-        <h2>Select a Category</h2>
+        <h1>Select a Category</h1>
         <div class="divider"></div>
         <div class="categories">
           <Category title="Body" src="./files/body.jpg"/>

@@ -4,23 +4,21 @@
   margin: 0rem 1.5rem;
 }
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: sans-serif, Verdana, Geneva, Tahoma;
   background: #ffffff;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 .smallTitle {
   font-size: 0.75rem;
   font-weight: 900;
-  margin-left: 4.5rem;
+  margin: 0.5rem 0rem 0.5rem 3.5rem;
   padding-top: 0;
-  margin-top: 0;
 }
 header {
   display: inline-flex;
-  margin-left: 6rem;
-  margin-top: 0;
-  margin-bottom: 1rem;
+  margin: 0 0 1rem 5rem;
 }
 header #logo {
   width: 3.3rem;
@@ -30,9 +28,9 @@ header .contact-details {
   margin-left: 20px;
 }
 header .contact-details h2 {
-  margin-top: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.3rem;
+  margin: 0 0 0.6rem 0;
+  font-family: Verdana;
+  font-size: 1.4rem;
 }
 header .contact-details .contact {
   display: inline-flex;
@@ -43,7 +41,7 @@ header .contact-details .contact {
 header .contact-details i {
   color: #858585;
   padding-right: 0.1rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 header .contact-details a {
   text-decoration: none;
@@ -54,29 +52,32 @@ header .contact-details a:hover {
   text-decoration: underline;
 }
 header .toggle {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-left: 250px;
+  font-family: Verdana;
+  position: absolute;
+  right: 1.6rem;
 }
 header .toggle p {
   display: inline-flex;
   font-weight: 800;
   font-size: 0.9rem;
 }
+header .toggle p:first-child {
+  padding-right: 0.8rem;
+}
 header .toggle i {
   display: inline-flex;
-  font-size: 2rem;
-  margin-top: -0.5rem;
-  margin-left: -0.4rem;
-  color: #ccc;
+  font-size: 1.2rem;
+  margin-left: 0.2rem;
+  color: #797979;
 }
 nav {
   width: 100%;
   display: inline-flex;
   border: solid 1px #ececec;
   border-bottom: solid #ececec 2px;
-  padding: 0.9rem 0;
+  padding: 0.7rem;
   background: #fafafa;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 nav .search {
   border: solid 1px #ececec;
@@ -92,7 +93,7 @@ nav .search i {
 }
 nav .search input {
   border: none;
-  width: 25rem;
+  width: 58vw;
   padding: 0.3rem;
 }
 nav .search input::placeholder {
@@ -121,10 +122,11 @@ nav .select p {
   margin-top: 0.5rem;
   padding-right: 15px;
   font-weight: 700;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
+  width: 17vw;
 }
 nav .select i {
-  border-left: solid 1px #ececec;
+  border-left: solid 1px #797979;
   height: 2.3rem;
   text-transform: uppercase;
   color: #9e1e23;
@@ -140,7 +142,9 @@ nav .cart {
   justify-content: space-evenly;
   align-items: center;
 }
-nav .cart i,
+nav .cart i {
+  font-size: 1.1rem;
+}
 nav .cart p {
   font-size: 1.4rem;
 }
@@ -148,7 +152,8 @@ nav .cart p {
   text-decoration: none;
   color: black;
   font-size: 0.75rem;
-  margin-left: 4.5rem;
+  padding-left: 3rem;
+  height: 100px;
 }
 .smallLink:hover {
   color: #337ab7;
@@ -156,35 +161,38 @@ nav .cart p {
 }
 .jumbotron-top {
   width: 100%;
-  height: 17rem;
+  height: 16rem;
   background-color: #072847;
   color: white;
   position: relative;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana;
 }
 .jumbotron-top img {
   object-fit: cover;
-  object-position: 20% 20%;
-  width: 20rem;
-  height: 17rem;
+  object-position: 21% 20%;
+  width: 15rem;
+  height: 16rem;
   padding: 0;
   margin: 0;
   position: absolute;
 }
 .jumbotron-top h2 {
   font-weight: 800;
-  padding-left: 22rem;
-  padding-right: 19rem;
+  padding-left: 16rem;
+  padding-right: 21rem;
   position: absolute;
   font-size: 1.4rem;
 }
 .jumbotron-top p {
-  font-size: 0.8rem;
-  padding: 6rem 19rem 3rem 22rem;
+  font-size: 0.9rem;
+  padding: 6rem 20rem 3rem 16rem;
+  margin-top: 0.5rem;
+  font-family: sans-serif;
 }
 .make {
   background: #ececec;
-  padding: 1.2rem 0 3rem 0;
+  padding: 1.2rem 1.4rem 2rem 1rem;
+  font-family: Verdana;
 }
 .make h2 {
   margin: 0.5rem 1.5rem;
@@ -206,22 +214,23 @@ nav .cart p {
 .make .carMakes .makeContainer a {
   text-decoration: none;
   color: black;
-  font-weight: 600;
+  font-weight: 900;
   font-size: 1.1rem;
 }
 .make .carMakes .makeContainer a:hover {
   text-decoration: underline;
 }
 .make .carMakes .makeContainer a p {
-  text-align: center;
+  margin-left: 1.9rem;
   margin-bottom: 0;
 }
 .category {
-  margin-top: 2rem;
+  margin: 2rem 1.4rem 2.5rem 1.4rem;
 }
-.category h2 {
+.category h1 {
   margin: 0.5rem 1.5rem;
   font-size: 1.4rem;
+  font-family: Verdana;
 }
 .category .categories {
   display: grid;
@@ -255,20 +264,18 @@ nav .cart p {
   bottom: 0.5rem;
 }
 .category .categories .categoryContainer img {
-  width: 3.5rem;
+  width: 6.3rem;
   position: absolute;
   bottom: 0.5rem;
   right: 0.5rem;
 }
 .jumbotron-bottom {
   background: #072847;
-  padding-left: 2rem;
   color: white;
-  padding-bottom: 6rem;
+  padding: 0rem 0rem 6rem 2.4rem;
 }
 .jumbotron-bottom .jumbotron-grid {
   display: grid;
-  grid-template-areas: about legal links 1fr;
   grid-template-columns: repeat(4, 1fr);
 }
 .jumbotron-bottom .jumbotron-grid h5 {
@@ -293,26 +300,26 @@ nav .cart p {
 .jumbotron-bottom .lightDivider {
   background: white;
   height: 0.5px;
+  margin: 0rem 3rem 1rem 0rem;
 }
 .jumbotron-bottom .warning {
-  display: inline-flex;
+  display: inline;
   font-size: 0.6rem;
-  margin-top: 1.3rem;
+  letter-spacing: -0.5px;
 }
 .jumbotron-bottom .warning i {
   font-size: 1.5rem;
   margin-right: 0.5rem;
 }
 footer {
-  padding: 1.5rem 1.5rem 0 1.7rem;
+  padding: 1.2rem 2.8rem 0rem 3rem;
   color: #6d6d6d;
 }
 footer .copyright {
   position: relative;
-  margin-bottom: 1.5rem;
 }
 footer .copyright img {
-  width: 17rem;
+  width: 16rem;
   height: 0.8rem;
 }
 footer .copyright p {
@@ -320,12 +327,70 @@ footer .copyright p {
   position: absolute;
   right: 0;
   bottom: 0;
+  letter-spacing: -0.5px;
 }
 footer #code {
-  font-size: 0.7rem;
-  padding-top: 1rem;
+  font-size: 0.75rem;
+  padding-top: 1.5rem;
+  margin-bottom: 0.1rem;
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 1200px) {
+  nav input {
+    width: 40vw;
+  }
+  nav .select p {
+    width: 16vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  header,
+  .smallTitle {
+    margin-left: 1rem;
+  }
+  .hide {
+    display: none;
+  }
+  img#logo {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .contact-details .contact {
+    display: none !important;
+  }
+  .hamburger {
+    border: solid 1px #ececec;
+    border-radius: 10%;
+    padding: 0.3rem 0.8rem;
+    height: 25px;
+    position: absolute;
+    right: 15px;
+  }
+  .hamburger .line {
+    height: 2px;
+    background: #797979;
+    width: 1.4rem;
+    margin-top: 5px;
+  }
+  nav {
+    display: block;
+  }
+  nav .search {
+    margin: 0 1.5rem 0.5rem 0;
+  }
+  nav .search input {
+    width: 86vw;
+  }
+  nav .select {
+    margin-left: 0;
+  }
+  nav .select p {
+    margin: 0.8rem 0 0 0;
+    padding-left: 0.1rem;
+    width: 77vw;
+  }
+  nav .cart {
+    width: 9vw;
+  }
   .jumbotron-top img {
     display: none;
     visibility: hidden;
@@ -335,5 +400,27 @@ footer #code {
   }
   .jumbotron-top p {
     padding: 4.5rem 6rem 4.5rem 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  nav {
+    display: block;
+  }
+  nav .search {
+    margin: 0 1.5rem 0.5rem 0;
+  }
+  nav .search input {
+    width: 80vw;
+  }
+  nav .select {
+    margin-left: 0;
+  }
+  nav .select p {
+    margin: 0.8rem 0 0 0;
+    padding-left: 0.1rem;
+    width: 66vw;
+  }
+  nav .cart {
+    width: 14vw;
   }
 }

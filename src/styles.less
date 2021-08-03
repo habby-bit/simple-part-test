@@ -2,8 +2,6 @@
 @leftMargin: 4.5rem;
 @navBorder: solid 1px #ececec;
 @primaryColor: #072847;
-@fontFamily: Verdana, Geneva, Tahoma, sans-serif;
-// @secondaryColor:
 
 // Mixins
 .divider {
@@ -13,26 +11,25 @@
 }
 
 body {
-    font-family: @fontFamily;
+    font-family: sans-serif, Verdana, Geneva, Tahoma;
     background: #ffffff;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
+// Small Top of Page Title
 .smallTitle {
     font-size: 0.75rem;
     font-weight: 900;
-    margin-left: @leftMargin;
+    margin: 0.5rem 0rem 0.5rem 3.5rem;
     padding-top: 0;
-    margin-top: 0;
 }
 
 // Header
 header {
     display: inline-flex;
-    margin-left: 6rem;
-    margin-top: 0;
-    margin-bottom: 1rem;
+    margin: 0 0 1rem 5rem;
 
     #logo {
         width: 3.3rem;
@@ -43,9 +40,9 @@ header {
         margin-left: 20px;
 
         h2 {
-            margin-top: 0;
-            font-family: @fontFamily;
-            font-size: 1.3rem;
+            margin: 0 0 0.6rem 0;
+            font-family: Verdana;
+            font-size: 1.4rem;
         }
 
         .contact {
@@ -58,7 +55,7 @@ header {
         i {
             color: #858585;
             padding-right: 0.1rem;
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
 
         a {
@@ -74,21 +71,25 @@ header {
 
     // Parts & About Us
     .toggle {
-        font-family: @fontFamily;
-        margin-left: 250px;
+        font-family: Verdana;
+        position: absolute;
+        right: 1.6rem;
 
         p {
             display: inline-flex;
             font-weight: 800;
             font-size: 0.9rem;
+
+            &:first-child {
+                padding-right: 0.8rem;
+            }
         }
 
         i {
             display: inline-flex;
-            font-size: 2rem;
-            margin-top: -0.5rem;
-            margin-left: -0.4rem;
-            color: #ccc;
+            font-size: 1.2rem;
+            margin-left: 0.2rem;
+            color: #797979;
         }
     }
 }
@@ -99,9 +100,9 @@ nav {
     display: inline-flex;
     border: @navBorder;
     border-bottom: solid #ececec 2px;
-    padding: 0.9rem 0;
+    padding: 0.7rem;
     background: #fafafa;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 
     .search {
         border: @navBorder;
@@ -118,7 +119,7 @@ nav {
 
         input {
             border: none;
-            width: 25rem;
+            width: 58vw;
             padding: 0.3rem;
 
             &::placeholder {
@@ -151,11 +152,12 @@ nav {
             margin-top: 0.5rem;
             padding-right: 15px;
             font-weight: 700;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
+            width: 17vw;
         }
 
         i {
-            border-left: @navBorder;
+            border-left: solid 1px #797979;
             height: 2.3rem;
             text-transform: uppercase;
             color: #9e1e23;
@@ -173,7 +175,10 @@ nav {
         justify-content: space-evenly;
         align-items: center;
 
-        i,
+        i {
+            font-size: 1.1rem;
+        }
+
         p {
             font-size: 1.4rem;
         }
@@ -184,7 +189,8 @@ nav {
     text-decoration: none;
     color: black;
     font-size: 0.75rem;
-    margin-left: @leftMargin;
+    padding-left: 3rem;
+    height: 100px;
 
     &:hover {
         color: #337ab7;
@@ -195,17 +201,17 @@ nav {
 // Top Jumbotron
 .jumbotron-top {
     width: 100%;
-    height: 17rem;
+    height: 16rem;
     background-color: @primaryColor;
     color: white;
     position: relative;
-    font-family: @fontFamily;
+    font-family: Verdana;
 
     img {
         object-fit: cover;
-        object-position: 20% 20%;
-        width: 20rem;
-        height: 17rem;
+        object-position: 21% 20%;
+        width: 15rem;
+        height: 16rem;
         padding: 0;
         margin: 0;
         position: absolute;
@@ -213,22 +219,25 @@ nav {
 
     h2 {
         font-weight: 800;
-        padding-left: 22rem;
-        padding-right: 19rem;
+        padding-left: 16rem;
+        padding-right: 21rem;
         position: absolute;
         font-size: 1.4rem;
     }
 
     p {
-        font-size: 0.8rem;
-        padding: 6rem 19rem 3rem 22rem;
+        font-size: 0.9rem;
+        padding: 6rem 20rem 3rem 16rem;
+        margin-top: 0.5rem;
+        font-family: sans-serif;
     }
 }
 
 // Select A Make
 .make {
     background: #ececec;
-    padding: 1.2rem 0 3rem 0;
+    padding: 1.2rem 1.4rem 2rem 1rem;
+    font-family: Verdana;
 
     h2 {
         margin: 0.5rem 1.5rem;
@@ -251,7 +260,7 @@ nav {
             a {
                 text-decoration: none;
                 color: black;
-                font-weight: 600;
+                font-weight: 900;
                 font-size: 1.1rem;
 
                 &:hover {
@@ -259,7 +268,7 @@ nav {
                 }
 
                 p {
-                    text-align: center;
+                    margin-left: 1.9rem;
                     margin-bottom: 0;
                 }
             }
@@ -268,13 +277,13 @@ nav {
 }
 
 // Select A Category
-
 .category {
-    margin-top: 2rem;
+    margin: 2rem 1.4rem 2.5rem 1.4rem;
 
-    h2 {
+    h1 {
         margin: 0.5rem 1.5rem;
         font-size: 1.4rem;
+        font-family: Verdana;
     }
 
     .categories {
@@ -291,12 +300,12 @@ nav {
 
             &:hover {
                 cursor: pointer;
+                border: black 1px solid;
 
                 h4,
                 a {
                     text-decoration: underline;
                 }
-                border: black 1px solid;
             }
 
             h4 {
@@ -313,7 +322,7 @@ nav {
             }
 
             img {
-                width: 3.5rem;
+                width: 6.3rem;
                 position: absolute;
                 bottom: 0.5rem;
                 right: 0.5rem;
@@ -322,15 +331,14 @@ nav {
     }
 }
 
+// Lower Jumbotron
 .jumbotron-bottom {
     background: @primaryColor;
-    padding-left: 2rem;
     color: white;
-    padding-bottom: 6rem;
+    padding: 0rem 0rem 6rem 2.4rem;
 
     .jumbotron-grid {
         display: grid;
-        grid-template-areas: about legal links 1fr;
         grid-template-columns: repeat(4, 1fr);
 
         h5 {
@@ -360,12 +368,13 @@ nav {
     .lightDivider {
         background: white;
         height: 0.5px;
+        margin: 0rem 3rem 1rem 0rem;
     }
 
     .warning {
-        display: inline-flex;
+        display: inline;
         font-size: 0.6rem;
-        margin-top: 1.3rem;
+        letter-spacing: -0.5px;
 
         i {
             font-size: 1.5rem;
@@ -374,16 +383,16 @@ nav {
     }
 }
 
+// Footer
 footer {
-    padding: 1.5rem 1.5rem 0 1.7rem;
+    padding: 1.2rem 2.8rem 0rem 3rem;
     color: #6d6d6d;
 
     .copyright {
         position: relative;
-        margin-bottom: 1.5rem;
 
         img {
-            width: 17rem;
+            width: 16rem;
             height: 0.8rem;
         }
 
@@ -392,19 +401,99 @@ footer {
             position: absolute;
             right: 0;
             bottom: 0;
+            letter-spacing: -0.5px;
         }
     }
 
     #code {
-        font-size: 0.7rem;
-        padding-top: 1rem;
+        font-size: 0.75rem;
+        padding-top: 1.5rem;
+        margin-bottom: 0.1rem;
     }
 }
 
 // Media Queries
 
+// Large
+@media screen and (max-width: 1200px) {
+    // Nav
+    nav {
+        input {
+            width: 40vw;
+        }
+
+        .select p {
+            width: 16vw;
+        }
+    }
+}
+
 // Medium
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 768px) {
+    // Contact Details
+    header,
+    .smallTitle {
+        margin-left: 1rem;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    img#logo {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .contact-details {
+        .contact {
+            display: none !important;
+        }
+    }
+
+    .hamburger {
+        border: @navBorder;
+        border-radius: 10%;
+        padding: 0.3rem 0.8rem;
+        height: 25px;
+        position: absolute;
+        right: 15px;
+
+        .line {
+            height: 2px;
+            background: #797979;
+            width: 1.4rem;
+            margin-top: 5px;
+        }
+    }
+
+    // Nav
+    nav {
+        display: block;
+
+        .search {
+            margin: 0 1.5rem 0.5rem 0;
+
+            input {
+                width: 86vw;
+            }
+        }
+
+        .select {
+            margin-left: 0;
+            p {
+                margin: 0.8rem 0 0 0;
+                padding-left: 0.1rem;
+                width: 77vw;
+            }
+        }
+
+        .cart {
+            width: 9vw;
+        }
+    }
+
+    // Top Jumbotron
     .jumbotron-top {
         img {
             display: none;
@@ -422,3 +511,30 @@ footer {
 }
 
 // Small
+@media screen and (max-width: 500px) {
+    // Nav
+    nav {
+        display: block;
+
+        .search {
+            margin: 0 1.5rem 0.5rem 0;
+
+            input {
+                width: 80vw;
+            }
+        }
+
+        .select {
+            margin-left: 0;
+            p {
+                margin: 0.8rem 0 0 0;
+                padding-left: 0.1rem;
+                width: 66vw;
+            }
+        }
+
+        .cart {
+            width: 14vw;
+        }
+    }
+}
